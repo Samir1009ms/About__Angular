@@ -1,0 +1,72 @@
+@import '../../../styles/colors';
+@import '../../../variables/variables';
+@import '../../../variables/mixins';
+
+
+.contact {
+    width: 100%;
+    min-height: 653px;
+    background: $dark;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include mobile {
+        min-height: 704px;
+        padding: 0 20px;
+    }
+
+    .contact-left {
+        @include mobile {
+            display: none;
+        }
+
+        .contact-left-img {
+            // height: 468px;
+            height: 610px;
+
+
+        }
+
+    }
+
+    .contact-right {
+        .contact-right-name {
+            width: 50%;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 58px;
+
+            @include mobile {
+                width: auto;
+            }
+        }
+
+        .contact-container {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 31px;
+
+            @include mobile {
+                width: auto;
+            }
+
+            .text {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 19px;
+
+            }
+
+            .sosial {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 19px;
+
+                span {}
+            }
+        }
+
+    }
+}

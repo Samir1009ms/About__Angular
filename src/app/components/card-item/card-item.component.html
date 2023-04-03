@@ -1,0 +1,18 @@
+<div class="{{styl}}-container grid">
+    <ng-container *ngFor="let item of items">
+        <div class="{{styl}} {{grid}}">
+            <div class="port-img-cont">
+                <img class="{{styl}}-img" src="{{item.src}}" alt="{{item.name}}">
+            </div>
+            <div class="port-text-cont">
+                <h3 class="port-name">{{item.title}}</h3>
+                <p class="port-text">{{item.text}}</p>
+                <span class="port-btn">{{item.btn}}
+                    <span class="app-icon">
+                        open_in_new
+                    </span>
+                </span>
+            </div>
+        </div>
+    </ng-container>
+</div>

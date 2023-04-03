@@ -1,0 +1,95 @@
+@import '../../../styles/colors';
+@import '../../../variables/variables';
+@import '../../../variables/mixins';
+
+.home {
+    width: 100%;
+    min-height: 653px;
+    background: $dark;
+    display: flex;
+
+    @include mobile {
+        min-height: 703px;
+    }
+
+    .home-container {
+        width: 100%;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        .images {
+            height: 440px;
+            position: absolute;
+            left: 140px;
+            top: 10px;
+            z-index: 1;
+
+            @include mobile {
+                height: 276px;
+                left: -42px;
+                top: -3px;
+                z-index: 0;
+
+
+            }
+
+            &:nth-child(2) {
+                height: 362px;
+                right: 24px;
+                bottom: -45px;
+                left: auto;
+                top: auto;
+
+                @include mobile {
+                    display: none;
+                }
+            }
+        }
+
+        .home-name {
+            font-weight: 900;
+            font-size: 64px;
+            line-height: 77px;
+            text-align: center;
+            position: relative;
+
+            @include mobile {
+                font-size: 49px;
+
+            }
+
+            .home-name-title {
+                position: absolute;
+                z-index: 2;
+                left: 31px;
+
+                @include mobile {
+                    display: none;
+                }
+            }
+        }
+
+        .home-text {
+            width: 37%;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+
+
+            @include mobile {
+                width: 94%;
+            }
+
+            .mobile {
+                @include mobile {
+                    display: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+<section class="contact">
+    <div class="contact-left">
+        <ng-container *ngFor="let img of imgs">
+            <img class="contact-left-img" [src]="img.src" [alt]="img.title">
+        </ng-container>
+    </div>
+    <div class="contact-right">
+        <h1 class="contact-right-name">You can reach me any time🙂 </h1>
+        <div class="contact-container">
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et
+                dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute irure dolor.</p>
+
+            <ng-container *ngFor="let item of items">
+                <p class="sosial"><span>{{item.sosial}}</span>: <span>{{item.detail}}</span></p>
+            </ng-container>
+        </div>
+
+        <app-button></app-button>
+    </div>
+</section>

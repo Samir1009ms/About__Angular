@@ -1,0 +1,15 @@
+@import '../../../styles/colors';
+@import '../../../variables/variables';
+@import '../../../variables/mixins';
+
+
+.portfolios {
+    width: 100%;
+    min-height: 653px;
+    background-color: $dark;
+    padding: 39px 72px 0;
+
+    @include mobile {
+        padding: 20px 5px;
+    }
+}

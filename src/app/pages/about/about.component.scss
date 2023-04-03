@@ -1,0 +1,70 @@
+@import '../../../styles/colors';
+@import '../../../variables/variables';
+@import '../../../variables/mixins';
+
+.about {
+    background-color: $dark;
+    min-height: 653px;
+
+    .about-top {
+        display: flex;
+        align-items: center;
+        padding-right: 75px;
+        column-gap: 10px;
+        padding-left: 50px;
+        margin-bottom: 21px;
+
+        @include mobile {
+            flex-direction: column;
+            padding: 0 15px;
+            text-align: center;
+        }
+
+        .about-top-img {
+            height: 340px;
+            margin-top: -23px;
+        }
+
+        .about-top-text {
+            font-weight: 700;
+            font-size: 56px;
+            line-height: 64px;
+            padding-top: 50px;
+
+            @include mobile {
+                font-size: 28px;
+            }
+
+            .yellow {
+                color: $btnBgColor;
+            }
+
+
+        }
+    }
+
+    .about-bottom {
+        padding: 10px 70px;
+
+        @include mobile {
+            padding: 0 15px;
+        }
+
+        .text {
+            font-size: 14px;
+            line-height: 15px;
+            font-weight: 700;
+            display: flex;
+            flex-direction: column;
+            row-gap: 15px;
+
+            .textBold {
+                &:nth-child(even) {
+                    font-weight: 400;
+                }
+            }
+
+
+        }
+    }
+}

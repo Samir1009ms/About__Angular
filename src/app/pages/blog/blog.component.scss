@@ -1,0 +1,9 @@
+@import '../../../styles/colors';
+@import '../../../variables/variables';
+@import '../../../variables/mixins';
+
+.blogs {
+    width: 100%;
+    background-color: $dark;
+    padding: 39px 72px 0;
+}

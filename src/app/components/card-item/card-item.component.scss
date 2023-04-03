@@ -1,0 +1,106 @@
+@import '../../../styles/colors';
+@import '../../../variables/variables';
+@import '../../../variables/mixins';
+
+
+.blog-container {
+    width: 100%;
+    gap: 13px;
+    margin: 0;
+
+
+}
+
+.port-container {
+    width: 100%;
+    gap: 13px;
+    margin: 0;
+    justify-content: center;
+
+}
+
+.blog {
+
+    border: $border;
+    border-radius: 19px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+
+    // @include desktop {
+    //     width: 22%;
+    // }
+
+    @include tablet {
+        width: 24%;
+    }
+}
+
+.port {
+    row-gap: 18px;
+    border: $border;
+    border-radius: 19px;
+    padding: 0;
+    display: flex;
+
+    // @include desktop {
+    //     width: 22%;
+    // }
+
+    // @include tablet {
+    //     width: 48%;
+    // }
+}
+
+.port-img-cont {
+    .port-img {
+        height: 174px;
+        border-radius: 19px;
+        border: $border;
+        object-fit: fill;
+    }
+
+    .blog-img {
+        width: 100%;
+        height: 181px;
+        border-radius: 19px;
+        border: $border;
+        object-fit: fill;
+    }
+}
+
+.port-text-cont {
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .port-name {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 10px;
+    }
+
+    .port-text {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        margin-bottom: 10px;
+
+    }
+
+    .port-btn {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        margin-bottom: 10px;
+        display: inline-block;
+
+
+        .app-icon {
+            font-size: 12px;
+        }
+    }
+}

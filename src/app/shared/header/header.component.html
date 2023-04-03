@@ -1,0 +1,45 @@
+<ng-container>
+    <header class="header">
+        <nav class="header-nav">
+            <ul class="header-nav-list">
+                <!-- <li>
+                          <li class="list">
+                    <a class="list-link" routerLinkActive="active" (click)="get('home')"
+                        [routerLinkActiveOptions]="{exact:true}" routerLink="/">home</a>
+                </li>
+                <li class="list">
+                    <a class="list-link" routerLinkActive="active" (click)="get('about')" routerLink="/about">about</a>
+                </li>
+                <li class="list">
+                    <a class="list-link" routerLinkActive="active" (click)="get('contact')"
+                        routerLink="/contact">contact</a>
+                </li>
+                <li class="list">
+                    <a class="list-link" routerLinkActive="active" (click)="get('portfolios')"
+                        routerLink="/portfolios">portfolios</a>
+                </li>
+                <li class="list">
+                    <a class="list-link" routerLinkActive="active" (click)="get('journey')"
+                        routerLink="/journey">journey</a>
+                </li>
+                <li class="list">
+                    <a class="list-link" routerLinkActive="active" (click)="get('blog')" routerLink="/blog">blog</a>
+                </li>
+                    </li> -->
+                <li class="list" *ngFor="let item of items">
+                    <a class="list-link" routerLinkActive="active" (click)="get(item.name)"
+                        routerLink="/{{ item.route }}" [routerLinkActiveOptions]="{ exact: true }">{{ item.name }}
+                    </a>
+                </li>
+            </ul>
+            <div class="header-title">
+                <div class="header-title-cont">
+                    <i class="pi pi-bars"></i>
+                </div>
+                <div class="header-title-cont">
+                    <span class="list"> {{ pageTitle }}</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+</ng-container>

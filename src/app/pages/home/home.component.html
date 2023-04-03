@@ -1,0 +1,28 @@
+<ng-container>
+    <main class="home">
+        <section class="home-container">
+
+            <ng-container *ngFor="let img of imgs ">
+
+                <img class="images" [src]='img.url' [alt]='img.name'>
+
+            </ng-container>
+
+            <h1 class="home-name">
+                Hey there 👋 <br>
+                I am Amirhossein
+                <span class="home-name-title">
+                    am
+                </span>
+            </h1>
+            <p class="home-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s,<span class="mobile"> when an unknown printer took a
+                    galley of type and
+                    scrambled it to make a type specimen book.</span>
+            </p>
+            <!-- ! btn components -->
+            <app-button></app-button>
+        </section>
+    </main>
+</ng-container>

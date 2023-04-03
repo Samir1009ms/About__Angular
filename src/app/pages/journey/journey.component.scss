@@ -1,0 +1,124 @@
+@import '../../../styles/colors';
+@import '../../../variables/variables';
+@import '../../../variables/mixins';
+
+
+
+.journey {
+    width: 100%;
+    display: flex;
+    padding: 40px 0 40px 40px;
+    justify-content: space-between;
+    background-color: $dark;
+
+    @include mobile {
+        flex-direction: column-reverse;
+        padding: 10px;
+    }
+
+    .journey-left {
+        width: 70%;
+
+        @include mobile {
+            width: 100%;
+        }
+
+
+        .journey-left-top {
+            display: flex;
+            margin-bottom: 31px;
+            column-gap: 18px;
+
+            .top-info {
+                .top-name {
+                    width: 80%;
+                    font-weight: 700;
+                    font-size: 48px;
+                    line-height: 58px;
+
+                    @include mobile {
+                        width: 100%;
+                        font-size: 36px;
+                        text-align: center;
+                        line-height: 44px;
+                    }
+                }
+
+                .top-text {
+                    width: 47%;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: $textColorLight;
+
+                    @include mobile {
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .top-img {
+                height: 221px;
+
+                @include mobile {
+                    display: none;
+                }
+            }
+        }
+
+        .journey-left-bottom {
+            display: flex;
+            flex-direction: column;
+            row-gap: 15px;
+
+            .bottom__text {
+
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+
+                &:first-child {
+                    font-weight: 700;
+                }
+            }
+
+        }
+    }
+
+    .journey-right {
+        width: 25%;
+        padding: 0 0 0 50px;
+
+        @include mobile {
+            width: 100%;
+            padding: 10px;
+        }
+
+        .journey-right-name {
+            font-weight: 900;
+            font-size: 25px;
+            line-height: 30px;
+            // text-align: center;
+        }
+
+        .journey-right-selected {
+            width: 100%;
+            margin-bottom: 15px;
+
+            @include mobile {
+                display: none;
+            }
+
+            .selected {
+                width: 75%;
+                height: 42px;
+                border-radius: 10px;
+                border: $border;
+                background-color: $dark;
+            }
+
+            .option {}
+        }
+    }
+}

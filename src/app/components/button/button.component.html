@@ -1,0 +1,8 @@
+<div class="btn-container">
+    <ng-container *ngFor="let item of items">
+
+        <button routerLink="/{{item.route}}" class="{{item.class}} btn">
+            {{item.title}}
+        </button>
+    </ng-container>
+</div>
